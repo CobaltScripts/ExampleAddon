@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "examplemodule",
+  "version": "${version}",
+  "name": "Example Module",
+  "description": "A starter template for building custom modules",
+  "authors": [
+    "QuiteBoring"
+  ],
+  "contact": {
+    "homepage": "https://cobalt.quiteboring.dev/",
+    "sources": "https://github.com/CobaltScripts/Cobalt"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/examplemodule/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "cobalt": [
+      {
+        "adapter": "kotlin",
+        "value": "com.example.ExampleModule"
+      }
+    ]
+  },
+  "mixins": [
+    "examplemodule.mixins.json"
+  ]
+}

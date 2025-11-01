@@ -32,16 +32,21 @@ dependencies {
 
   modImplementation("net.fabricmc:fabric-language-kotlin:${property("fabric_kotlin_version")}")
   modImplementation("net.fabricmc.fabric-api:fabric-api:${property("fabric_version")}")
-  modImplementation(files("lib/Cobalt-LIB.jar"))
+  modImplementation(files("lib/Cobalt-1.0.0.jar"))
 
-  modRuntimeOnly("me.djtheredstoner:DevAuth-fabric:1.2.1")
+  modImplementation("com.github.caoimhebyrne:KDiscordIPC:0.2.3")
+  modImplementation("org.lwjgl:lwjgl-nanovg:${lwjglVersion}")
+
+  listOf("windows", "linux", "macos", "macos-arm64").forEach {
+    modImplementation("org.lwjgl:lwjgl-nanovg:${lwjglVersion}:natives-$it")
+  }
 }
 
 tasks {
   processResources {
     inputs.property("version", project.version)
 
-    filesMatching("cobalt.module.json") {
+    filesMatching("fabric.mod.json") {
       expand(getProperties())
       expand(mutableMapOf("version" to project.version))
     }

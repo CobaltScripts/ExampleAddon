@@ -10,7 +10,7 @@ class ExampleModule : Module() {
   }
 
   override fun onInitialize() {
-    println("HELLO WORLD!")
+    println("ExampleModule initialized!")
   }
 
 }
