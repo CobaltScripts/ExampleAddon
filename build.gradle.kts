@@ -34,7 +34,7 @@ dependencies {
   modImplementation("net.fabricmc.fabric-api:fabric-api:${property("fabric_version")}")
   modImplementation(files("lib/Cobalt-1.0.0.jar"))
 
-  modImplementation("com.github.caoimhebyrne:KDiscordIPC:0.2.3")
+  implementation("meteordevelopment:discord-ipc:1.1")
   modImplementation("org.lwjgl:lwjgl-nanovg:${lwjglVersion}")
 
   listOf("windows", "linux", "macos", "macos-arm64").forEach {
