@@ -1,5 +1,4 @@
 pluginManagement {
-
   repositories {
     maven("https://maven.fabricmc.net/")
     mavenCentral()
@@ -14,7 +13,6 @@ pluginManagement {
     id("fabric-loom") version loom_version
     id("org.jetbrains.kotlin.jvm") version fabric_kotlin_version.split("+kotlin.")[1].split("+")[0]
   }
-
 }
 
 rootProject.name = "ExampleAddon"
