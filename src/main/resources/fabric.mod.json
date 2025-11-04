@@ -22,6 +22,9 @@
       }
     ]
   },
+  "depends": {
+    "cobalt": "*"
+  },
   "mixins": [
     "exampleaddon.mixins.json"
   ]
