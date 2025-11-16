@@ -6,5 +6,8 @@
   "description": "example addon.",
   "entrypoints": [
     "com.example.ExampleAddon"
+  ],
+  "mixins": [
+    "exampleaddon.mixins.json"
   ]
 }

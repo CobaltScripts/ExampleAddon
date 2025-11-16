@@ -3,6 +3,7 @@ package com.example.command
 import org.cobalt.api.command.Command
 import org.cobalt.api.command.annotation.DefaultHandler
 import org.cobalt.api.command.annotation.SubCommand
+import org.cobalt.api.util.ChatUtils
 
 object ExampleCommand : Command(
   name = "example",
@@ -16,7 +17,7 @@ object ExampleCommand : Command(
 
   @SubCommand
   fun hello(name: String) {
-    println("Hello, $name!")
+    ChatUtils.sendMessage("Hello, $name!")
   }
 
 }
