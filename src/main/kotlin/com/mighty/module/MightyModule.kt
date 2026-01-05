@@ -1,11 +1,11 @@
-package com.example.module
+package com.mighty.module
 
 import java.awt.Color
 import org.cobalt.api.module.Module
 import org.cobalt.api.module.setting.impl.*
 import org.lwjgl.glfw.GLFW
 
-object ExampleModule : Module(
+object MightyModule : Module(
   name = "Example Module",
 ) {
 

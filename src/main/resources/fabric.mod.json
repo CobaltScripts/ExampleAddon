@@ -20,7 +20,7 @@
     "cobalt": [
       {
         "adapter": "kotlin",
-        "value": "com.example.ExampleAddon"
+        "value": "com.mighty.MightyAddon"
       }
     ]
   },

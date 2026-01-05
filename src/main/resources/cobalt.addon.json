@@ -1,9 +1,9 @@
 {
-  "id": "example_addon",
-  "name": "Example Addon",
+  "id": "mighty_addon",
+  "name": "Mighty Addon",
   "version": "1.0.0",
   "entrypoints": [
-    "com.example.ExampleAddon"
+    "com.mighty.MightyAddon"
   ],
   "mixins": [
     "exampleaddon.mixins.json"
