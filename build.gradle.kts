@@ -17,6 +17,7 @@ base {
 repositories {
     mavenCentral()
     maven("https://jitpack.io")
+    maven("https://maven.ccbluex.net/snapshots")
     maven("https://pkgs.dev.azure.com/djtheredstoner/DevAuth/_packaging/public/maven/v1")
 }
 
@@ -28,6 +29,7 @@ dependencies {
     implementation("net.fabricmc.fabric-api:fabric-api:${property("fabric_api_version")}")
     implementation("com.github.CobaltScripts:Cobalt:master-SNAPSHOT")
 
+    implementation("com.jagrosh:DiscordIPC:0.6.0-SNAPSHOT")
     runtimeOnly("me.djtheredstoner:DevAuth-fabric:1.2.2")
 }
 
